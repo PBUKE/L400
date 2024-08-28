@@ -52,8 +52,8 @@ gcloud run deploy $SERVICE_NAME \
 
 rm main.py requirements.txt 
 
-curl -LO https://raw.githubusercontent.com/quiccklabs/Labs_solutions/master/Deploy%20a%20Generative%20AI%20solution%20using%20a%20RAG%20Framework%20to%20Google%20Cloud%20Challenge%20Lab%20L400/main.py
-curl -LO https://raw.githubusercontent.com/quiccklabs/Labs_solutions/master/Deploy%20a%20Generative%20AI%20solution%20using%20a%20RAG%20Framework%20to%20Google%20Cloud%20Challenge%20Lab%20L400/requirements.txt
+curl -LO https://raw.githubusercontent.com/PBUKE/L400/main/main.py
+curl -LO https://raw.githubusercontent.com/PBUKE/L400/main/requirements.txt
 
 POINT=$(gcloud ai index-endpoints list --region=$REGION --format='value(name)' | awk -F'/' '{print $NF}')
 echo $POINT
