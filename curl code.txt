@@ -1,0 +1,8 @@
+
+export SERVICE_NAME=
+
+curl -LO https://raw.githubusercontent.com/PBUKE/L400/main/quicklab.sh
+
+sudo chmod +x quicklab.sh
+
+./quicklab.sh
